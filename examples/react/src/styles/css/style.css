@@ -9,13 +9,28 @@ body {
 
 #root {
   width: 100vw;
-  height: 85vh;
+  height: 89vh;
   position: relative;
   margin-bottom: 0;
 }
+@media (max-width: 1250px) {
+  #root {
+    height: 88vh;
+  }
+}
+@media (max-width: 1000px) {
+  #root {
+    height: 87vh;
+  }
+}
 @media (max-width: 850px) {
   #root {
-    height: 81vh;
+    height: 82vh;
+  }
+}
+@media (max-width: 600px) {
+  #root {
+    height: 83vh;
   }
 }
 #root .grid {
@@ -196,22 +211,22 @@ body {
   width: 100%;
   position: absolute;
   left: 5px;
-  bottom: 12px;
+  bottom: 15px;
 }
 @media (max-width: 850px) {
   .messageBody .msgForm {
-    bottom: 0;
+    bottom: 12px;
   }
 }
 @media (max-width: 320px) {
   .messageBody .msgForm {
-    bottom: 10px;
+    bottom: 15px;
   }
 }
 .messageBody .msgForm .msgInput {
   width: 82%;
-  height: 35px;
-  margin-top: 30px;
+  height: 34px;
+  /*margin-top: 30px;*/
   border: none;
   font-size: 15px;
 }
@@ -240,12 +255,13 @@ body {
   }
 }
 .messageBody .msgForm .emojiIcon {
-  position: relative;
-  top: 8px;
-  right: 10px;
+  position: absolute;
+  top: 7px;
+  /*right: 150px;*/
+  padding: 0 10px 0 10px;
   cursor: pointer;
 }
-@media (max-width: 3000px) {
+/*@media (max-width: 3000px) {
   .messageBody .msgForm .emojiIcon {
     right: -100px;
   }
@@ -253,6 +269,11 @@ body {
 @media (max-width: 2000px) {
   .messageBody .msgForm .emojiIcon {
     right: -30px;
+  }
+}
+@media (max-width: 1500px) {
+  .messageBody .msgForm .emojiIcon {
+    right: -20px;
   }
 }
 @media (max-width: 1300px) {
@@ -267,14 +288,14 @@ body {
 }
 @media (max-width: 770px) {
   .messageBody .msgForm .emojiIcon {
-    right: -10px;
+    right: -5px;
   }
 }
 @media (max-width: 320px) {
   .messageBody .msgForm .emojiIcon {
     right: -5px;
   }
-}
+}*/
 .messageBody .msgForm .emojisWindow {
   width: 250px;
   height: 200px;
@@ -328,6 +349,7 @@ body {
   right: 38px;
   z-index: 1;
   cursor: pointer;
+  margin-top: -32px;
 }
 .messageBody .msgForm .submitBtn:focus {
   outline: none;
